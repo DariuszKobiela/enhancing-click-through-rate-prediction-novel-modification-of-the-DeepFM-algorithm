@@ -1,0 +1,7 @@
+split_%: 70/20/10
+
+	ROWS	SIZE
+all:   288614 [14.15 MB]
+train: 202029  [9.91 MB]
+valid:  57723  [2.83 MB]
+test:   28862  [1.41 MB]

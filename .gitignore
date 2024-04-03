@@ -1,7 +1,12 @@
 # Data files
-**/test.csv
-**/valid.csv
-**/test.csv
+/**/test.csv
+/**/valid.csv
+/**/test.csv
+**/Avazu_x1/*.csv
+**/Criteo_x1/*.csv
+**/Frappe_x1/*.csv
+**/MovielensLatest_x1/*.csv
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

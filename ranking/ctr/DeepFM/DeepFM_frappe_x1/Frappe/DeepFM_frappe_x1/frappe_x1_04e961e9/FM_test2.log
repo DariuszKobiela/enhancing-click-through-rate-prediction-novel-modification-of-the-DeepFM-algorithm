@@ -1,0 +1,53 @@
+2024-04-02 08:36:13,886 P13664 INFO {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "./data/Frappe/",
+    "dataset_id": "frappe_x1_04e961e9",
+    "debug": "False",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.05",
+    "epochs": "10",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user', 'item', 'daytime', 'weekday', 'isweekend', 'homework', 'cost', 'weather', 'country', 'city'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[200, 400, 400, 200]",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "FM_test2",
+    "model_root": "./Frappe/DeepFM_frappe_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_dropout": "0.2",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "./data/Frappe/Frappe_x1/test_data.csv",
+    "train_data": "./data/Frappe/Frappe_x1/train_data.csv",
+    "use_hdf5": "True",
+    "valid_data": "./data/Frappe/Frappe_x1/valid_data.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2024-04-02 08:36:13,897 P13664 INFO Set up feature encoder...
+2024-04-02 08:36:13,897 P13664 INFO Load feature_map from json: ./data/Frappe/frappe_x1_04e961e9\feature_map.json
+2024-04-02 08:36:13,899 P13664 INFO Loading data...
+2024-04-02 08:36:13,901 P13664 INFO Loading data from h5: ./data/Frappe/frappe_x1_04e961e9\train.h5
+2024-04-02 08:36:13,919 P13664 INFO Loading data from h5: ./data/Frappe/frappe_x1_04e961e9\valid.h5
+2024-04-02 08:36:13,923 P13664 INFO Train samples: total/245317, pos/81729, neg/163588, ratio/33.32%, blocks/1
+2024-04-02 08:36:13,924 P13664 INFO Validation samples: total/21646, pos/7249, neg/14397, ratio/33.49%, blocks/1
+2024-04-02 08:36:13,924 P13664 INFO Loading train data done.
+2024-04-02 08:36:13,962 P13664 INFO Total number of parameters: 403113.
+2024-04-02 08:36:13,964 P13664 INFO Start training: 60 batches/epoch
+2024-04-02 08:36:13,965 P13664 INFO ************ Epoch=1 start ************

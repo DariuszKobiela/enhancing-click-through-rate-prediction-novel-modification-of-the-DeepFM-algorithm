@@ -1,0 +1,73 @@
+2024-04-02 08:25:20,956 P21972 INFO {
+    "batch_norm": "True",
+    "batch_size": "4096",
+    "data_format": "csv",
+    "data_root": "./data/Frappe/",
+    "dataset_id": "frappe_x1_04e961e9",
+    "debug": "False",
+    "embedding_dim": "10",
+    "embedding_regularizer": "0.05",
+    "epochs": "10",
+    "every_x_epochs": "1",
+    "feature_cols": "[{'active': True, 'dtype': 'float', 'name': ['user', 'item', 'daytime', 'weekday', 'isweekend', 'homework', 'cost', 'weather', 'country', 'city'], 'type': 'categorical'}]",
+    "gpu": "0",
+    "hidden_activations": "relu",
+    "hidden_units": "[400, 400, 400]",
+    "label_col": "{'dtype': 'float', 'name': 'label'}",
+    "learning_rate": "0.001",
+    "loss": "binary_crossentropy",
+    "metrics": "['AUC', 'logloss']",
+    "min_categr_count": "1",
+    "model": "DeepFM",
+    "model_id": "FM_test",
+    "model_root": "./Frappe/DeepFM_frappe_x1/",
+    "monitor": "AUC",
+    "monitor_mode": "max",
+    "net_dropout": "0.2",
+    "net_regularizer": "0",
+    "num_workers": "3",
+    "optimizer": "adam",
+    "patience": "2",
+    "pickle_feature_encoder": "True",
+    "save_best_only": "True",
+    "seed": "2021",
+    "shuffle": "True",
+    "task": "binary_classification",
+    "test_data": "./data/Frappe/Frappe_x1/test_data.csv",
+    "train_data": "./data/Frappe/Frappe_x1/train_data.csv",
+    "use_hdf5": "True",
+    "valid_data": "./data/Frappe/Frappe_x1/valid_data.csv",
+    "verbose": "1",
+    "version": "pytorch"
+}
+2024-04-02 08:25:20,968 P21972 INFO Set up feature encoder...
+2024-04-02 08:25:20,969 P21972 INFO Load feature_map from json: ./data/Frappe/frappe_x1_04e961e9\feature_map.json
+2024-04-02 08:25:20,979 P21972 INFO Loading data...
+2024-04-02 08:25:20,982 P21972 INFO Loading data from h5: ./data/Frappe/frappe_x1_04e961e9\train.h5
+2024-04-02 08:25:21,055 P21972 INFO Loading data from h5: ./data/Frappe/frappe_x1_04e961e9\valid.h5
+2024-04-02 08:25:21,074 P21972 INFO Train samples: total/245317, pos/81729, neg/163588, ratio/33.32%, blocks/1
+2024-04-02 08:25:21,076 P21972 INFO Validation samples: total/21646, pos/7249, neg/14397, ratio/33.49%, blocks/1
+2024-04-02 08:25:21,076 P21972 INFO Loading train data done.
+2024-04-02 08:25:21,119 P21972 INFO Total number of parameters: 423313.
+2024-04-02 08:25:21,122 P21972 INFO Start training: 60 batches/epoch
+2024-04-02 08:25:21,122 P21972 INFO ************ Epoch=1 start ************
+2024-04-02 08:26:10,664 P21972 INFO [Metrics] AUC: 0.939564 - logloss: 0.565282
+2024-04-02 08:26:10,665 P21972 INFO Save best model: monitor(max): 0.939564
+2024-04-02 08:26:10,672 P21972 INFO --- 60/60 batches finished ---
+2024-04-02 08:26:11,075 P21972 INFO Train loss: 0.375712
+2024-04-02 08:26:11,076 P21972 INFO ************ Epoch=1 end ************
+2024-04-02 08:26:57,380 P21972 INFO [Metrics] AUC: 0.969930 - logloss: 0.202409
+2024-04-02 08:26:57,380 P21972 INFO Save best model: monitor(max): 0.969930
+2024-04-02 08:26:57,387 P21972 INFO --- 60/60 batches finished ---
+2024-04-02 08:26:57,754 P21972 INFO Train loss: 0.266840
+2024-04-02 08:26:57,755 P21972 INFO ************ Epoch=2 end ************
+2024-04-02 08:27:46,628 P21972 INFO [Metrics] AUC: 0.977878 - logloss: 0.171167
+2024-04-02 08:27:46,629 P21972 INFO Save best model: monitor(max): 0.977878
+2024-04-02 08:27:46,638 P21972 INFO --- 60/60 batches finished ---
+2024-04-02 08:27:47,019 P21972 INFO Train loss: 0.222522
+2024-04-02 08:27:47,020 P21972 INFO ************ Epoch=3 end ************
+2024-04-02 08:28:36,366 P21972 INFO [Metrics] AUC: 0.980671 - logloss: 0.176428
+2024-04-02 08:28:36,367 P21972 INFO Save best model: monitor(max): 0.980671
+2024-04-02 08:28:36,373 P21972 INFO --- 60/60 batches finished ---
+2024-04-02 08:28:36,739 P21972 INFO Train loss: 0.200886
+2024-04-02 08:28:36,739 P21972 INFO ************ Epoch=4 end ************

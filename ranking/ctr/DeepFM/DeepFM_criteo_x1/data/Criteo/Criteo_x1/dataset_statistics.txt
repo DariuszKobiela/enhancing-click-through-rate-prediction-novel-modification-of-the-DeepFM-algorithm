@@ -1,0 +1,9 @@
+split_%: 70/20/10
+
+          ROWS        SIZE
+all:    10 million [10.62 GB]
+train:  7 million   [7.65 GB]
+valid:  2 million   [1.91 GB]
+test:   1 million   [1.06 GB]
+
+1048575  

@@ -1,0 +1,4 @@
+,[timestamp],[command],[exp_id],[dataset_id],[train],[val],[test],[dataset processing time],[model training time]
+0,20240402-104211,run_expid.py --config ./config --expid FM_test1 --logfile run1.txt --gpu 0,FM_test1,frappe_x1_04e961e9,N.A.,"{'AUC': 0.9395642953120942, 'logloss': 0.5652823735024645}","{'AUC': 0.9382335113465105, 'logloss': 0.5644489292198646}",0 days 00:00:00.031793,0 days 00:01:09.754131
+,[timestamp],[command],[exp_id],[dataset_id],[train],[val],[test],[dataset processing time],[model training time]
+0,20240402-104632,run_expid.py --config ./config --expid FM_test1 --logfile run1.txt --gpu 0,FM_test1,frappe_x1_04e961e9,N.A.,"{'AUC': 0.9395642953120942, 'logloss': 0.5652823735024645}","{'AUC': 0.9382335113465105, 'logloss': 0.5644489292198646}",0 days 00:00:00.031582,0 days 00:01:09.731523

@@ -1,0 +1,68 @@
+{
+    "dataset_id": "frappe_x1_04e961e9",
+    "num_fields": 10,
+    "num_features": 5392,
+    "input_length": 10,
+    "feature_specs": {
+        "user": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 958,
+            "index": 0
+        },
+        "item": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 4083,
+            "index": 1
+        },
+        "daytime": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 8,
+            "index": 2
+        },
+        "weekday": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 8,
+            "index": 3
+        },
+        "isweekend": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 3,
+            "index": 4
+        },
+        "homework": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 4,
+            "index": 5
+        },
+        "cost": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 3,
+            "index": 6
+        },
+        "weather": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 10,
+            "index": 7
+        },
+        "country": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 81,
+            "index": 8
+        },
+        "city": {
+            "source": "",
+            "type": "categorical",
+            "vocab_size": 234,
+            "index": 9
+        }
+    }
+}

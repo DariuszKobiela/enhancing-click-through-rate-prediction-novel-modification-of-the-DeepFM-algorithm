@@ -1,0 +1,8 @@
+USE [CRITEO]
+GO
+
+SELECT COUNT(*)
+FROM Criteo;
+
+SELECT TOP 10 *
+FROM Criteo;
